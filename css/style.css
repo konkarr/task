@@ -1,0 +1,153 @@
+
+body {
+    perspective: 700px ;
+}
+
+
+.div1 {
+    width: 300px;
+    height: 250px;
+    background-color: rgb(95, 255, 47);
+
+    /* transform: translate();
+
+    transform: rotate();
+
+    transform: scale(2 , 1);
+
+    transform: skew(); */
+
+    transform:matrix(0.85,0.57,-1.20,0.21,19,-42);
+    /* scaleX ,  skewY , skewX  ,  scaleY ,  translateX  , translateY */
+    
+    /* transform-style: flat ; */
+
+    transform-style: preserve-3d ;
+
+    transform: matrix3d(0.5775,-0.64,0.87,0,0.64,0.29645,0.64,0,-0.87,-0.64,0.385,0,200,50,200,1);
+}
+
+/* //////////////////////////////////////////////////////////////////////////// */
+body{
+    background-image: url(../Images/12740241_10_FEB_10.jpg);
+    background-size: cover;
+}
+.item{
+    width: 90%;
+overflow: auto;
+margin: auto;
+/* margin-top: 100px;    */
+
+}
+.n{
+    margin-left: 80px;
+    margin-right: 20px;
+}
+
+  section,.front , .back{
+     width: 300px;
+     height: 350px;
+     border-radius:20px  20px;
+}
+.back {
+    background-color: brown;
+    transform: rotateY(180deg); 
+    background-image: url(../Images/photo_2022-12-24_11-06-37.jpg);
+    background-size: cover;
+    text-align: center;
+}
+section {
+    float: left;
+    margin: auto;
+    transform-style: preserve-3d;
+    position: relative;
+    transition: all 2s;
+    margin-left: 70px;
+    margin-top: 150px;
+    box-shadow: 12px 5px 20px 1px rgb(186, 123, 238);
+    border-radius: 20px  20px;
+
+}
+.front , .back {
+    position: absolute;
+}
+.front {
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(../Images/photo_2022-12-24_11-06-40.jpg);
+    background-size: cover;
+
+}
+
+section:hover {
+    transform: rotateY(180deg); 
+}
+.h1{
+    text-shadow: 5px 5px 10px whitesmoke;
+    font-size: 34px;
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.b1{
+    height: 40px;
+    width: 200px;
+    font-size: 24px;
+    margin-top: 100px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right top, rgb(53, 5, 92),rgba(231, 20, 238, 0.582)); 
+
+    color: white;
+}
+  section , .front2 , .back2 {
+     width:300px;
+     height: 350px;
+     border-radius:20px  20px;
+
+}
+.back2 {
+    background-color: brown;
+    transform: rotateY(180deg); 
+    background-image: url(../Images/photo_2022-12-24_10-57-23.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+.front2 , .back2 {
+    position: absolute;
+}
+.front2 {
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(../Images/photo_2022-12-24_10-57-26.jpg);
+    background-size: cover;
+}
+
+section:hover {
+    transform: rotateY(180deg); 
+}
+  section , .front3 , .back3 {
+     width: 300px;
+     height: 350px;
+     border-radius:20px  20px;
+
+}
+.back3 {
+    background-color: brown;
+    transform: rotateY(180deg); 
+    background-image: url(../Images/photo_2022-12-24_10-58-11.jpg);
+    background-size: cover;
+    text-align: center;
+}
+.front3 , .back3 {
+    position: absolute;
+}
+.front3 {
+    z-index:  1;
+    backface-visibility: hidden;
+    background-image: url(../Images/photo_2022-12-24_10-58-25.jpg);
+    background-size: cover;
+}
+
+section:hover {
+    transform: rotateY(180deg); 
+}
